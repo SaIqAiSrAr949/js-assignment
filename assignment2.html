@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/ass-1/index.js">
+</body>
+
+<script>
+    //                        ...CHAPTER-15...
+
+// Declare anarray named`fruits` and display the third fruit.
+let fruit = ['apple' , 'banana' , 'mango' , 'strawberry' , 'orange']
+console.log(fruit)
+console.log(fruit[2])
+
+// Define an array of cities and display the first and last city.
+let cities = ['Peshawar' , 'Karachi' , 'Islamabad' , 'Lahore' , 'Queta']
+console.log(cities)
+console.log(cities[0] , cities[4])
+
+// Declare anarray with mixed data types and display each element
+let mixedArray = ['saiqa' , '9' ,'warsak-dam' , '3.92']
+console.log(mixedArray)
+console.log(mixedArray[0] , mixedArray[1] , mixedArray[2] , mixedArray[3])
+
+
+                        //    ...CHAPTER-16...
+
+// Declare anemptyarray and add five student names.
+let students = []
+console.log(students)
+students.push('Saiqa' , 'Laiba' , 'Manal' , 'Ayesha' , 'Amna')
+console.log(students)
+
+//  Declare an array of colors. Use `push()` to add two colors at the end of an array
+let colors = ['black' , 'purple' , 'blue']
+console.log(colors)
+colors.push('yellow')
+colors.push('white')
+console.log(colors)
+
+
+//  Declare anarray with five numbers and add a newnumber at the end. And  Use`pop()` to removethe last element from an array 
+let numbers = [1 , 2 , 3 , 4 , 5]
+console.log(numbers)
+numbers.push(6)
+numbers.push(7)
+console.log(numbers)
+numbers.pop()
+console.log(numbers)
+
+
+
+                        //    ...CHAPTER-17...
+    // Declare anarray named`animals ` Use `unshift()` to add an animal at the start of an array and Use`shift()` to remove the first element of an array.
+
+let animals = ['agle' , 'cat ', 'parrot' , 'lion']
+console.log(animals)
+animals.unshift('tiger')
+console.log(animals)
+animals.shift()
+console.log(animals)
+
+
+
+//  Copy the first three elements from an array of sports into a new array. 
+
+let sports = [ 'basketball' ,'bedminton' , 'cricket' , 'tennis', 'football' ,  'vollyball' , 'pollo' , 'hockey' , 'baseball']
+console.log(sports)
+let my_Favourite_Sports = []
+my_Favourite_Sports = sports.slice(1, 7 )
+console.log(my_Favourite_Sports)
+
+
+//  Use `slice()` to extract and copy the last three elements of an array.hint(use negative index.
+
+let last_three_sports = sports.slice(-3)
+console.log(last_three_sports)
+
+// Use `splice()` to remove two elements from index 2 in an array.
+sports.splice(2 , 2)
+console.log(sports)
+
+//   Use `splice()` to add two cities at index 3 of an array.
+let city = [ 'Peshawar' , 'Karachi' , 'Islamabad' , 'Lahore' , 'Queta']
+city.splice( 3 , 0, 'SAWABI' , 'NOWSHEHRA')
+console.log(city)
+
+//   Use `slice()` to extract and copy the last three elements of an array.
+let last_three_cities = city.slice(-3)
+console.log(last_three_cities)
+
+//   Use `splice()` to replace two elements in an array.
+city.splice(1, 2, 'bannu', 'kohat')
+console.log(city)
+
+// Remove a subject from a subject array using `splice()` after taking index number from user
+ 
+let subjects = ['AI' , 'DataCom' , 'InfoSec' , 'DLD']
+console.log(subjects)
+let indexNo = prompt ("enter indx of element you want to delete")
+subjects.splice(indexNo)
+console.log(subjects)
+
+
+// Insert 'Laptop' and 'Tablet' at index 2 in an array of gadgets. [Use splice method]
+let gadgets = ['smartphone' , 'smart tv' ,'power bank' , 'camera']
+console.log(gadgets)
+gadgets.splice(2 , 0 , 'laptop' , 'tablet')
+console.log(gadgets)
+
+
+// Print numbers 1 to 10using aloop.
+
+for(let i = 0 ; i <= 10 ; i ++)
+{
+    console.log(i)
+}
+
+//  Display subjects stored in an array using a loop.
+
+  let sub = ['math' , 'HRM' , 'comp. Networks' , 'Automata' , 'multimedia com']
+              for(let i = 0 ; i <= sub.length; i ++)
+              {
+                console.log(sub[i])
+              }
+
+//   Print the multiplication table of 5 using a loop.
+
+for( let i = 1 ; i <= 10 ; i ++)
+{
+    console.log( "5" , '*' , i , "=" , (i * 5))                                               
+     
+}
+//    Count down from 10 to 1 using a loop.
+   for ( let i = 10 ; i >= 1 ; i --)
+   {
+    console.log(i)
+   }
+
+
+
+// Take five colors as user input, store them in an array, and display in the console.
+
+let Colors = ['white' , 'black' , 'marron' , 'yellow' , 'gray']
+              for(let i = 0 ; i <= 4; i ++)
+              {
+                console.log(Colors[i])
+              }
+
+
+//  Declare an array of five numbers and display each number in the console. [ for loop]
+
+      let numbs = ['22' , '42' , '63', '47' , '85']
+      for (let i = 0 ; i <= 4 ; i ++ )
+      {
+        console.log(numbs [i])
+      }
+
+
+//   Declare an array of five numbers and calculate their sum. Formula(sum += i)
+     
+let numArray = [1,1,1,1,1]
+let sum = 0
+for(let i = 0 ; i <= 4 ; i ++)
+{
+       sum = sum + numArray[i]
+}
+console.log(sum)
+
+//bonus
+ //Q8: Find the largest number in an array.
+
+ let num_array = [ 284738 , 783948 , 3278299 , 379829]
+         console.log(num_array)
+
+ let max_number = num_array[0]
+
+ for ( i = 0 ; i <= num_array.length ; i ++)
+ 
+ if ( num_array[i] > max_number)
+ {
+ max_number = num_array[i]
+
+}
+console.log(max_number)
+
+</script>
+
+</html>
